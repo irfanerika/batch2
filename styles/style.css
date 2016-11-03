@@ -1,0 +1,308 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+	display: block;}
+
+/* Body */
+body {
+	color: #666666;
+	background-color: #f9f8f6;
+	background-image: url(../images/dark-wood.jpg);
+	background-position: center;
+	font-family: Georgia, Times, serif;
+	line-height: 1.4em;
+	margin: 0px;}
+
+/* Pembungkus utama */
+.wrapper {
+	position:relative;
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 1px solid #000000;
+	background-color: #ffffff;}
+	
+/* Primary header */
+header {
+	position:relative;
+	height: 320px;
+	background-size: 950px 400px;
+	background-repeat:no-repeat;
+    background-image: url(../images/header.jpg);}
+
+/* Judul heading 1 */
+h1 {
+	text-align:center;
+	display: block;
+    font-size: 2em;
+	margin-left:5px;
+	margin-top: 15px;}
+	
+/* judul  Heading 2*/
+h2 {
+	margin: 10px 0px 0px 0px;}
+
+p.tanggal{
+	text-decoration:bold;}
+p {
+	text-align:justify;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+	
+/* Tampilan navigasi dan footer */
+nav, footer {
+	overflow:auto;
+	position:fixed;
+	clear: both;
+	color: #ffffff;
+	background-color: #3f3636;
+	height: 30px;
+	width:939px;
+	margin: -20px auto auto auto;
+	z-index:1000;}
+	
+/* Navigasi unorder list */
+nav ul {
+	list-style-type: none;
+    overflow: hidden;
+	margin: 0px;
+	padding: 4.2px;}
+	
+/* Navigasi list */
+nav li {
+	display: inline;
+	padding-top:50px;
+	margin-right: 10px;}
+	
+/* Navigasi link list */
+nav li a {
+	color: #ffffff;}
+	
+/* Navigasi link list saat terkena kursor */
+nav li a:hover{
+	color: red;}
+	
+/* Bagian perkenalan */
+section.perkenalan {
+	position:relative;
+	float: left;
+	width: 659px;
+	border-right: 1px solid #eeeeee;}
+	
+/* Bagian alasan */
+section.alasan {
+	position:relative;
+	float: left;
+	width: 250px;}
+
+/* Bagian alasan order list */
+section.alasan ol {
+	margin: 0px;
+	padding: 4.2px;}
+	
+/* Bagian alasan list */
+section.alasan li	{
+	padding-top:5px;
+	margin-left:14px;}
+	
+/* Bagian alasan link */
+section.alasan h2 a	{
+	color: red;}
+	
+/* Bagian alasan link saat terkena kursor */
+	section.alasan h2 a:hover{
+	color: #000000;}
+	
+/* Bagian kontak */
+section.kontak{
+	position:relative;
+	float: left;
+	width: 250px;
+	margin-top:50px;}
+	
+/* Bagian kontak link */
+section.kontak a	{
+	color: red;}
+	section.kontak a:hover{
+	color: #000000;}
+	
+/* Bagian artikel */
+article {
+	position:relative;
+	clear: both;
+	overflow: auto;
+	width: 100%;}
+	
+/* Bagian grup */
+hgroup {
+	position:relative;
+	margin-top: 10px;}
+	
+/* Bagian pigura */
+figure {
+	position:relative;
+	float: left;
+	width: 290px;
+	height: 220px;
+	padding: 5px;
+	margin: 7px;
+	border: 1px solid #eeeeee;}
+	
+figure.blog-pic{
+	position:relative;
+	float: left;
+	width: 270px;
+	height: 220px;
+	padding: 5px;
+	margin: 7px;
+	border: 1px solid #eeeeee;}
+
+	
+/* Bagian isi samping */
+aside {
+	position:relative;
+	width: 230px;
+	float: left;
+	padding: 0px 0px 0px 20px;}
+	
+/* Bagian isi samping link */
+aside section a {
+	position:relative;
+	display: block;
+display:inline;
+	border-bottom: 1px solid #eeeeee;}
+
+/* Bagian link */
+a {
+	display:inline;
+	position:relative;
+	color: red;
+	text-decoration: none;}
+	
+/* Bagian isi samping Header */
+aside h2 {
+	position:relative;
+	color: #de6581;}
+	1, h2, h3 {
+	font-weight: normal;}
+
+/* Bagian footer */	
+footer {
+	position:relative;
+	font-size: 80%;
+	padding: 7px 0px 0px 1px;}
+
+/* Transform scale */	
+.scale:hover{
+	transform: scale(2.5,2.5);}	
+	
+/* Transform skew */
+.skew:hover{
+  transform: skewX(30deg); }
+
+/* Transform rotate */
+figure.rotate {
+  transform-style: preserve-3d;}
+  
+figure.rotate:hover {
+  animation: rotate 5s linear infinite;}
+  
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);}
+  100% {
+    transform: rotateY(360deg);}}
+
+/* Bagian tombol */
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;}
+  
+ /* Bagian tombol saat di tekan */
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+/* Membuat keyframe */
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+.stage {
+  margin-top:80px;
+  background: #eaeaed;
+  border-radius: 6px;
+  height: 160px;
+  position: relative;
+  min-width: 10px;
+}
+.stage:hover .ball {
+  animation: slide 2s ease-in-out .5s infinite alternate;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+.ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+input, textarea {
+ padding: 10px;
+ border: 1px solid #E5E5E5;
+ width: 200px;
+ color: #999999;
+ box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+ -moz-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+ -webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+}
+textarea{
+ width: 400px;
+ height: 150px;
+ max-width: 400px;
+ line-height: 18px;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus{
+ border-color: 1px solid #06f;
+ box-shadow: #333 0px 0px 8px;
+ -moz-box-shadow: #333 0px 0px 8px;
+ -webkit-box-shadow: #333 0px 0px 8px;
+}
+.form label {
+ margin-left: 17px;
+ color: #333 ;
+}
+.submit input {
+ width: 100px;
+ height: 40px;
+ background-color: #06f;
+ color: #fff;
+ border-radius: 4px;
+ -moz-border-radius:4px;
+ -webkit-border-radius:4px;
+} 
